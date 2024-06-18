@@ -13,17 +13,15 @@ public class GameManager : MonoBehaviour
         {
             if(_instance == null)
             {
-                //_instance = FindObjectOfType<GameManager>();
-                //if (_instance == null)
-                //{
+     
+                {
                     GameObject gameManager = new GameObject("GameManager");
                     _instance = gameManager.AddComponent<GameManager>();
-                //}
+                }
             }
             return _instance;
         }
     }
-    TextMeshProUGUI HighScoreTxt;
     public float highScore;
     public float curScore;
     public float curHighScore;
